@@ -174,7 +174,8 @@ img {
 .nav-link:hover,
 .nav-link:focus,
 .address-link:hover,
-.address-list:focus {
+.address-list:focus,
+.current {
   color: var(--active-primary-brand-color);
 }
 
@@ -322,6 +323,7 @@ section {
 
 .social-links {
   display: flex;
+  justify-content: center;
   gap: 24px;
 }
 
@@ -339,6 +341,9 @@ section {
 .social-link:hover,
 .social-link:focus {
   background-color: var(--active-primary-brand-color);
+}
+.social-link-pic {
+  fill: var(--light-color);
 }
 
 .our-portfolio-section-title {
@@ -413,6 +418,7 @@ section {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  color: var(--light-color);
 }
 
 .footer {
@@ -423,7 +429,11 @@ section {
 
 .footer-container {
   display: flex;
-  gap: 120px;
+  align-items: baseline;
+}
+
+.logo-info-container {
+  margin-right: 120px;
 }
 
 .footer-logo {
@@ -444,6 +454,10 @@ section {
 .social-links-title {
   margin-bottom: 16px;
   font-weight: 500;
+  color: var(--bg-color);
+}
+.footer .social-links {
+  gap: 16px;
 }
 
 .footer .social-link:hover,
